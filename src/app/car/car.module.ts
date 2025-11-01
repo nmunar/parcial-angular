@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarListComponent } from './car-list/car-list.component';
+import { CarListComponent } from './components/car-list/car-list.component';
 
 @NgModule({
   imports: [CommonModule],
