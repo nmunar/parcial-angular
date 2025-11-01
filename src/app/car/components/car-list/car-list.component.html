@@ -1,7 +1,27 @@
 <div class="container-fluid">
   <div class="row">
-      <div class="col mb-2" *ngFor="let car of cars">
-         {{car.marca}}
-      </div>
-      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Linea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (car of cars; track car.marca; let i = $index) {
+            <tr>
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ car.marca }}</td>
+              <td>{{ car.linea }}</td>
+              <td>{{ car.modelo }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <div *ngFor="let item of modelCount">
+      Total {{ item.marca }}: {{ item.count }}
+    </div>
 </div>
