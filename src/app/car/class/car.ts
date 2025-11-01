@@ -1,11 +1,11 @@
 export class Car {
-  private marca: string;
-  private linea: string;
-  private referencia: string;
-  private modelo: number;
-  private kilometraje: number;
-  private color: string;
-  private imagen: string;
+  public marca: string;
+  public linea: string;
+  public referencia: string;
+  public modelo: number;
+  public kilometraje: number;
+  public color: string;
+  public imagen: string;
 
   constructor(
     marca: string,

@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-      <div class="col mb-2">
-Car list
+      <div class="col mb-2" *ngFor="let car of cars">
+         {{car.marca}}
       </div>
-  </div>
+      </div>
 </div>
