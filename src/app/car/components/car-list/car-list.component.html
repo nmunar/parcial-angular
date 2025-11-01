@@ -1,7 +1,8 @@
 <div class="container-fluid">
+  
   <div class="row">
-      <table class="table table-striped">
-        <thead>
+      <table class="table">
+        <thead class="thead-dark">
           <tr>
             <th scope="col">#</th>
             <th scope="col">Marca</th>
@@ -20,8 +21,10 @@
           }
         </tbody>
       </table>
-    </div>
-    <div *ngFor="let item of modelCount">
-      Total {{ item.marca }}: {{ item.count }}
-    </div>
+  </div>
+  
+  <div *ngFor="let item of modelCount">
+    Total {{ item.marca }}: {{ item.count }}
+  </div>
+  
 </div>
